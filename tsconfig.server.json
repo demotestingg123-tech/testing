@@ -1,0 +1,19 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"target": "ES2022",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"rootDir": ".",
+		"outDir": "./build",
+		"types": ["node"],
+		"strict": true,
+		"esModuleInterop": true,
+		"verbatimModuleSyntax": true,
+		"allowImportingTsExtensions": false,
+		"noEmit": false,
+		"sourceMap": true
+	},
+	"include": ["server/**/*.ts", "scripts/create-admin.ts"],
+	"exclude": ["server/**/*.test.ts", "node_modules", "build", "dist"]
+}
